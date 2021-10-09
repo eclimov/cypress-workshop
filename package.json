@@ -1,0 +1,9 @@
+{
+  "name": "cypress-workshop",
+  "version": "1.0.0",
+  "author": "eclimov",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^8.5.0"
+  }
+}
