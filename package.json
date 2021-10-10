@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "author": "eclimov",
   "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "test": "cypress run",
+    "test:head": "yarn test --headed",
+    "test:chrome": "yarn test -- --browser chrome",
+    "test:head:chrome": "yarn test:chrome --headed"
+  },
   "devDependencies": {
     "cypress": "^8.5.0"
   }
