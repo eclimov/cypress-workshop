@@ -1,0 +1,159 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-10T12:45:49.498Z",
+    "end": "2021-10-10T12:46:10.637Z",
+    "duration": 21139,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e43ec302-fa56-4b31-89b8-9d14bb623ccf",
+      "title": "",
+      "fullFile": "cypress/integration/homepage.spec.js",
+      "file": "cypress/integration/homepage.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fd23eb6d-9f24-4aac-ba28-cba85db32767",
+          "title": "homepage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have valid image in header",
+              "fullTitle": "homepage should have valid image in header",
+              "timedOut": null,
+              "duration": 3890,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homepage.getBrandingLogo().invoke('attr', 'src').should('eq', homepageData.logoUrl);",
+              "err": {},
+              "uuid": "20d45925-30b6-4dae-a03a-7484cb4906ef",
+              "parentUUID": "fd23eb6d-9f24-4aac-ba28-cba85db32767",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "b28aac9c-cce5-427b-966a-caf574cb87ca",
+              "title": "category cards",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should have correct number of category cards",
+                  "fullTitle": "homepage category cards should have correct number of category cards",
+                  "timedOut": null,
+                  "duration": 1843,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "homepage.getCategoryCards().should('have.length', Object.keys(categoryCardsData).length);",
+                  "err": {},
+                  "uuid": "b3e7f8ec-3e98-486a-af01-4d17029d6f35",
+                  "parentUUID": "b28aac9c-cce5-427b-966a-caf574cb87ca",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should lead to correct page when clicked",
+                  "fullTitle": "homepage category cards should lead to correct page when clicked",
+                  "timedOut": null,
+                  "duration": 12720,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const categoryCards = homepage.getCategoryCards();\nconst categoryCardsTitles = Object.keys(categoryCardsData);\nfor (const categoryCardsTitle of categoryCardsTitles) {\n  cy.visit(Cypress.env('url'));\n  const categoryCard = categoryCards.get('h5').contains(categoryCardsTitle);\n  categoryCard.click();\n  cy.url().should('eq', `${Cypress.env('url')}/${categoryCardsData[categoryCardsTitle]}`);\n}",
+                  "err": {},
+                  "uuid": "decad8eb-7c0c-4f0a-ab99-4504310264a9",
+                  "parentUUID": "b28aac9c-cce5-427b-966a-caf574cb87ca",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "b3e7f8ec-3e98-486a-af01-4d17029d6f35",
+                "decad8eb-7c0c-4f0a-ab99-4504310264a9"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 14563,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "20d45925-30b6-4dae-a03a-7484cb4906ef"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3890,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}

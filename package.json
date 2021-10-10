@@ -10,9 +10,10 @@
     "test:head": "yarn test --headed",
     "test:chrome": "yarn test -- --browser chrome",
     "test:head:chrome": "yarn test:chrome --headed",
-    "test:record:dashboard": "yarn test -- --record --key 1343cf09-82eb-4d0c-8ff7-18ce22fb7012"
+    "test:record:dashboard": "yarn test -- --record --key 1343cf09-82eb-4d0c-8ff7-18ce22fb7012 --reporter mochawesome"
   },
   "devDependencies": {
-    "cypress": "^8.5.0"
+    "cypress": "^8.5.0",
+    "mochawesome": "^6.3.1"
   }
 }
