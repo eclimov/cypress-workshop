@@ -1,3 +1,7 @@
 {
-  "projectId": "eo5e2j"
+  "projectId": "eo5e2j",
+  "env": {
+    "url": "http://automationpractice.com/index.php"
+  },
+  "testFiles": "**/*.feature"
 }

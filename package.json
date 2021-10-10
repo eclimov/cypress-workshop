@@ -13,6 +13,17 @@
     "test:record:dashboard": "yarn test -- --record --key 1343cf09-82eb-4d0c-8ff7-18ce22fb7012"
   },
   "devDependencies": {
-    "cypress": "^8.5.0"
+    "cypress": "^8.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }
