@@ -1,0 +1,11 @@
+{
+  "logoUrl": "/images/Toolsqa.jpg",
+  "categoryCards": {
+    "Elements": "elements",
+    "Forms": "forms",
+    "Alerts, Frame & Windows": "alertsWindows",
+    "Widgets": "widgets",
+    "Interactions": "interaction",
+    "Book Store Application": "books"
+  }
+}

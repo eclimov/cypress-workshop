@@ -1,1 +1,6 @@
-{}
+{
+  "env": {
+    "url": "https://demoqa.com"
+  },
+  "testFiles": "**/*.spec.js"
+}
