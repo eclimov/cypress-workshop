@@ -1,3 +1,9 @@
 {
-  "projectId": "eo5e2j"
+  "projectId": "eo5e2j",
+  "testFiles": "**/*.spec.js",
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "results/my-test-output.xml",
+    "toConsole": false
+  }
 }

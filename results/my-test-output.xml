@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.8070" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-10-14T12:07:20" tests="0" file="cypress/integration/api.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="r/dogecoin meme api" timestamp="2021-10-14T12:07:20" tests="4" time="6.8070" failures="0">
+    <testcase name="r/dogecoin meme api Should pong" time="1.1780" classname="Should pong">
+    </testcase>
+    <testcase name="r/dogecoin meme api should not accept 0 as limit" time="1.4990" classname="should not accept 0 as limit">
+    </testcase>
+    <testcase name="r/dogecoin meme api Should return expected number of memes" time="1.4420" classname="Should return expected number of memes">
+    </testcase>
+    <testcase name="r/dogecoin meme api Should have valid structure of each object" time="2.6880" classname="Should have valid structure of each object">
+    </testcase>
+  </testsuite>
+</testsuites>
